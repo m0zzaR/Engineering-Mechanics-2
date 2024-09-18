@@ -101,12 +101,3 @@ plt.xlim(-10, 10)  # Set the x-axis limits (in meters, adjust as necessary)
 plt.ylim(-6, 6)  # Set the y-axis limits (in meters, adjust as necessary)
 plt.show()
 
-def xdoubleprime(cs, v, theta, m):
-    xacc = (-cs * v * np.cos(theta) / m)
-    print(xacc)
-    return xacc
-
-def x(cs, v, theta, m, t):
-    pos = (-cs * v * np.cos(theta) * t) / m + v
-    print(pos)
-    return pos
